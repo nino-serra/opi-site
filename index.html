@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OPI — Verifiable Opinions Platform</title>
+  <meta name="description" content="OPI is a Web3 platform for surveys and targeted ads that fairly rewards users while guaranteeing anonymity and data reliability." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Tiny polish */
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+    .animate-float { animation: float 6s ease-in-out infinite; }
+  </style>
+</head>
+<body class="bg-[#0B1224] text-white antialiased">
+  <!-- Decorative gradient backdrop -->
+  <div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10">
+    <div class="absolute -top-40 -left-40 h-96 w-96 rounded-full blur-3xl opacity-30" style="background: radial-gradient(60% 60% at 50% 50%, #7C3AED 0%, #0B1224 70%);"></div>
+    <div class="absolute -bottom-40 -right-40 h-[28rem] w-[28rem] rounded-full blur-3xl opacity-25" style="background: radial-gradient(50% 50% at 50% 50%, #34D399 0%, #0B1224 70%);"></div>
+  </div>
+    
+    <!-- HEADER -------------------------------------------------------------------------------------->
+<header class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+  <!-- Logo -->
+  <a href="/" class="flex items-center gap-3">
+    <img
+      src="/assets/opi_logo_simple.png"
+      alt="OPI logo"
+      loading="lazy"
+      decoding="async"
+      width="230" height="58"
+      class="h-14 w-auto"
+    / onerror="this.onerror=null;this.src='https://numerous-rondeletia-ddd.notion.site/image/attachment%3Abf4b3f69-1902-46f6-9d7f-53f21632f5ba%3AOPI_LOGO_SIMPLE.png?table=block&id=250c8817-f603-809e-94fb-f38f264c7a3c&spaceId=a067a54c-1aa7-46b8-8ef8-6f8c9751f2e0&width=660&userId=&cache=v2';">
+    <span class="sr-only">OPI — Verifiable Opinions Platform</span>
+  </a>
+
+  <!-- Navigation ---------------------------------------------------------------------------------->
+  <nav class="hidden md:flex items-center gap-6 text-white/80 text-sm font-medium">
+    <a href="#how" class="relative group">
+      How it works
+      <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#7C3AED] transition-all duration-300 group-hover:w-full"></span>
+    </a>
+    <a href="#glance" class="relative group">
+      At a glance
+      <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#7C3AED] transition-all duration-300 group-hover:w-full"></span>
+    </a>
+    <a href="#tech" class="relative group">
+      Technology
+      <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#7C3AED] transition-all duration-300 group-hover:w-full"></span>
+    </a>
+    <a href="https://numerous-rondeletia-ddd.notion.site/LITE-PAPER-OPI-24fc8817f603804ab6a5db9a6eb692a6" target="_blank" class="relative group">
+      Litepaper
+      <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#7C3AED] transition-all duration-300 group-hover:w-full"></span>
+    </a>
+    <a href="#contact" class="relative group">
+      Contact
+      <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#7C3AED] transition-all duration-300 group-hover:w-full"></span>
+    </a>
+  </nav>
+
+  <!-- CTA -->
+  <a href="#app" aria-label="Launch the OPI app"
+     class="ml-6 inline-flex items-center justify-center rounded-xl bg-[#7C3AED] px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-black/10 hover:bg-[#6A2ECC] transition">
+    Launch App
+  </a>
+</header>
+
+
+
+    
+    <!-- HERO ------------------------------------------------------------------------------------------->
+<section class="relative max-w-7xl mx-auto px-6 pt-12 pb-16 md:pb-24">
+  
+  <!-- Animation fadeUp -->
+  <style>
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(8px) }
+      100% { opacity: 1; transform: translateY(0) }
+    }
+    .fade-up { animation: fadeUp .6s ease-out both }
+  </style>
+
+  <!-- H1 mis en avant -->
+  <div class="text-center md:text-left mb-8 md:mb-10 fade-up">
+    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+      Access quality data.<br />
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#7C3AED] to-[#34D399]">
+        Monetize your opinion.
+      </span>
+    </h1>
+  </div>
+    
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Colonne gauche -->
+    <div>
+      <!-- Chapo plus impactant -->
+      <p class="fade-up mt-6 md:mt-7 text-white/95 text-lg md:text-[1.22rem] leading-relaxed tracking-tight relative pl-4 max-w-xl" style="animation-delay:.08s">
+        <span class="absolute left-0 top-1 bottom-1 w-1 rounded-full bg-gradient-to-b from-[#7C3AED] to-[#34D399]"></span>
+        OPI is the first Web3 platform for surveys and targeted advertising that fairly rewards participants while guaranteeing anonymity and data reliability.
+      </p>
+
+      <!-- Points clés -->
+      <ul class="mt-7 md:mt-8 grid gap-4 md:gap-5">
+        <li class="flex items-start gap-3">
+          <span class="mt-1 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#7C3AED]/20">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4.5 w-4.5 text-[#A78BFA]" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 2 9l10 13L22 9 12 2Zm0 2.9 6.16 4.4L12 19.1 5.84 9.3 12 4.9Z"/></svg>
+          </span>
+          <p><span class="font-semibold">Reliable & verified data</span> — powered by Galactica’s anonymous digital identity.</p>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-1 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-400/15">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4.5 w-4.5 text-emerald-300" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C7.58 2 4 3.79 4 6v12c0 2.21 3.58 4 8 4s8-1.79 8-4V6c0-2.21-3.58-4-8-4Zm0 2c3.87 0 6 .99 6 2s-2.13 2-6 2-6-.99-6-2 2.13-2 6-2Zm0 16c-3.87 0-6-.99-6-2V9.69C7.22 10.49 9.4 11 12 11s4.78-.51 6-1.31V18c0 1.01-2.13 2-6 2Z"/></svg>
+          </span>
+          <p><span class="font-semibold">Fair rewards</span> — paid in OPI tokens, redeemable in our marketplace.</p>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-1 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white/10">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4.5 w-4.5 text-white/80" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1a5 5 0 0 0-5 5v3H6a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a3 3 0 0 0-3-3h-1V6a5 5 0 0 0-5-5Zm0 2a3 3 0 0 1 3 3v3H9V6a3 3 0 0 1 3-3Z"/></svg>
+          </span>
+          <p><span class="font-semibold">Guaranteed anonymity</span> — verified profile, private data.</p>
+        </li>
+      </ul>
+
+      <!-- CTAs -->
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#how" class="inline-flex items-center gap-2 rounded-xl bg-white text-[#0B1224] px-5 py-3 md:px-6 md:py-3.5 font-semibold hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">
+          Discover OPI
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M13.172 12 9.1 7.929l1.414-1.415L16 12l-5.485 5.485L9.1 16.07 13.172 12Z"/></svg>
+        </a>
+        <a href="#waitlist" class="inline-flex items-center gap-2 rounded-xl border border-white/20 px-5 py-3 md:px-6 md:py-3.5 font-semibold text-white hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60">
+          Join the Waitlist
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5ZM3 20.25A8.76 8.76 0 0 1 11.75 15h.5A8.76 8.76 0 0 1 21 20.25V22H3Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Colonne droite : image -->
+    <div class="relative flex justify-center md:justify-end">
+      <img
+        src="/assets/image.png"
+        alt="OPI interface"
+        loading="lazy"
+        decoding="async"
+        class="w-full max-w-[16rem] md:max-w-[18rem] lg:max-w-[21rem] h-auto object-cover rounded-2xl animate-float hover:scale-[1.02] transition"
+      / onerror="this.onerror=null;this.src='https://numerous-rondeletia-ddd.notion.site/image/attachment%3Aaf9ebc29-d259-40cb-9fb8-56e12e31b06f%3Aimage.png?table=block&id=250c8817-f603-802a-b5d8-e867e4693ac5&spaceId=a067a54c-1aa7-46b8-8ef8-6f8c9751f2e0&width=1420&userId=&cache=v2';">
+    </div>
+
+  </div>
+</section>
+
+<!-- Decorative gradient line -->
+<div class="relative mt-14 mb-20">
+  <div class="hidden lg:block absolute inset-x-0 top-1/2 -translate-y-1/2 pointer-events-none">
+    <div class="mx-2 h-px bg-gradient-to-r from-[#7C3AED]/40 via-white/10 to-emerald-400/40"></div>
+  </div>
+</div>
+
+    
+      <!-- GLANCE -------------------------------------------------------------------------------------------------------------->
+    
+    
+<section id="glance" class="max-w-7xl mx-auto px-6 pb-24">
+  <h2 class="text-2xl md:text-3xl font-bold">At a glance — OPI in 3 points</h2>
+  <p class="mt-2 text-white/70 max-w-2xl">Three audiences, one aligned ecosystem. Clear value for everyone.</p>
+
+  <div class="mt-8 grid md:grid-cols-3 gap-6">
+    <!-- 1) Survey Creators -->
+    <article
+      class="group rounded-2xl border border-white/10 bg-white/5 p-6 transition
+             shadow-sm hover:shadow-xl hover:shadow-[#7C3AED]/10
+             motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]">
+      <div class="h-10 w-10 rounded-lg bg-[#7C3AED]/20 grid place-items-center mb-4 transition group-hover:scale-110">
+        <!-- target icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#A78BFA]" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2a1 1 0 0 1 1 1v1.055A8.002 8.002 0 0 1 20.945 11H22a1 1 0 1 1 0 2h-1.055A8.002 8.002 0 0 1 13 19.945V21a1 1 0 1 1-2 0v-1.055A8.002 8.002 0 0 1 3.055 13H2a1 1 0 1 1 0-2h1.055A8.002 8.002 0 0 1 11 4.055V3a1 1 0 0 1 1-1Z"/>
+        </svg>
+      </div>
+      <h3 class="text-lg font-semibold">For Survey Creators</h3>
+      <p class="mt-2 text-white/70">Accurate, verified & actionable insights. Create targeted surveys, reward participants in OPI, make better decisions.</p>
+      <a href="#how" class="mt-4 inline-flex items-center gap-1 text-sm text-white/90 hover:underline">
+        Learn more
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M13.172 12 9.1 7.929l1.414-1.415L16 12l-5.485 5.485L9.1 16.07 13.172 12Z"/></svg>
+      </a>
+    </article>
+
+    <!-- 2) Advertisers -->
+    <article
+      class="group rounded-2xl border border-white/10 bg-white/5 p-6 transition
+             shadow-sm hover:shadow-xl hover:shadow-emerald-400/10
+             motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]">
+      <div class="h-10 w-10 rounded-lg bg-emerald-400/15 grid place-items-center mb-4 transition group-hover:scale-110">
+        <!-- megaphone -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-300" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M21 8v8a1 1 0 0 1-1.447.894L15 15.618V8.382l4.553-1.276A1 1 0 0 1 21 8ZM13 7.618v8.764L6.276 19.34A2 2 0 0 1 3.75 17.5V9.5A2 2 0 0 1 6.276 7.66L13 7.618Z"/>
+        </svg>
+      </div>
+      <h3 class="text-lg font-semibold">For Advertisers</h3>
+      <p class="mt-2 text-white/70">Reach a certified and engaged audience via Galactica ID. Reward attention with OPI and optimize conversions.</p>
+      <a href="#how" class="mt-4 inline-flex items-center gap-1 text-sm text-white/90 hover:underline">
+        Learn more
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M13.172 12 9.1 7.929l1.414-1.415L16 12l-5.485 5.485L9.1 16.07 13.172 12Z"/></svg>
+      </a>
+    </article>
+
+    <!-- 3) Users -->
+    <article
+      class="group rounded-2xl border border-white/10 bg-white/5 p-6 transition
+             shadow-sm hover:shadow-xl hover:shadow-white/10
+             motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]">
+      <div class="h-10 w-10 rounded-lg bg-white/10 grid place-items-center mb-4 transition group-hover:scale-110">
+        <!-- wallet -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white/80" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M3 7a3 3 0 0 1 3-3h11a1 1 0 0 1 0 2H6a1 1 0 0 0-1 1v1h13a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V7Zm18 6h-3a1 1 0 0 0 0 2h3v-2Z"/>
+        </svg>
+      </div>
+      <h3 class="text-lg font-semibold">For Users</h3>
+      <p class="mt-2 text-white/70">Monetize your opinion & attention. Earn OPI from surveys and ads; redeem for USDC or shopping vouchers.</p>
+      <a href="#how" class="mt-4 inline-flex items-center gap-1 text-sm text-white/90 hover:underline">
+        Learn more
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M13.172 12 9.1 7.929l1.414-1.415L16 12l-5.485 5.485L9.1 16.07 13.172 12Z"/></svg>
+      </a>
+    </article>
+  </div>
+</section>
+    
+
+
+
+    
+    <!-- HOW IT WORKS -------------------------------------------------------------------------------------------------------------->
+
+
+
+    <!-- Test ----------------------------------------------------------------------------------------------------------------->
+    
+    <!-- HOW IT WORKS – Staggered Vertical Journey (2 cols + right image) -->
+<section id="how" class="max-w-7xl mx-auto px-6 py-20">
+  <div class="grid lg:grid-cols-3 gap-10 items-start">
+    <!-- Steps (span 2 cols on desktop) -->
+    <div class="lg:col-span-2 relative">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">How it works</h2>
+      <p class="text-white/70 max-w-2xl mb-10">
+        A secure, privacy-first journey from identity to rewards — fully aligned for users, brands, and researchers.
+      </p>
+
+      <!-- Staggered grid -->
+      <div class="grid md:grid-cols-2 gap-8 relative">
+        <!-- LEFT COLUMN: 1,3,5 -->
+        <div class="space-y-8">
+          <!-- 01 -->
+          <article class="group rounded-2xl border border-white/10 bg-white/5 p-6
+                          hover:shadow-xl hover:shadow-emerald-400/10 transition">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-xs px-2 py-0.5 rounded bg-emerald-400/15 border border-emerald-400/20 text-emerald-200">01</span>
+              <h3 class="font-semibold">KYC with SwissBorg (one-time)</h3>
+            </div>
+            <p class="text-white/70 text-sm">
+              Verify once through SwissBorg to ensure compliance and security. Your documents stay with SwissBorg —
+              OPI never accesses original KYC files.
+            </p>
+          </article>
+
+          <!-- 03 -->
+          <article class="group rounded-2xl border border-white/10 bg-white/5 p-6
+                          hover:shadow-xl hover:shadow-violet-400/10 transition">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-xs px-2 py-0.5 rounded bg-violet-400/15 border border-violet-400/20 text-violet-200">03</span>
+              <h3 class="font-semibold">Set your interests</h3>
+            </div>
+            <p class="text-white/70 text-sm">
+              Pick categories (e.g., sports, music, tech). Your interest graph combines with SBT attributes to match
+              you with relevant surveys and ads — without exposing personal data.
+            </p>
+          </article>
+
+          <!-- 05 -->
+          <article class="group rounded-2xl border border-white/10 bg-white/5 p-6
+                          hover:shadow-xl hover:shadow-emerald-400/10 transition">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-xs px-2 py-0.5 rounded bg-emerald-400/15 border border-emerald-400/20 text-emerald-200">05</span>
+              <h3 class="font-semibold">Earn fair rewards in OPI</h3>
+            </div>
+            <p class="text-white/70 text-sm">
+              Receive OPI for each validated response or completed ad view. Quality checks and frequency caps
+              ensure fair, anti-spam distribution.
+            </p>
+          </article>
+        </div>
+
+        <!-- RIGHT COLUMN: 2,4,6 (stagger down) -->
+        <div class="space-y-8 md:pt-10">
+          <!-- 02 -->
+          <article class="group rounded-2xl border border-white/10 bg-white/5 p-6
+                          hover:shadow-xl hover:shadow-violet-400/10 transition">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-xs px-2 py-0.5 rounded bg-violet-400/15 border border-violet-400/20 text-violet-200">02</span>
+              <h3 class="font-semibold">Mint anonymous SBT on Galactica</h3>
+            </div>
+            <p class="text-white/70 text-sm">
+              Galactica issues a SoulBound Token with encrypted attributes (age band, country, gender, device…).
+              You can later prove attributes with Zero-Knowledge proofs — no raw data revealed.
+            </p>
+          </article>
+
+          <!-- 04 -->
+          <article class="group rounded-2xl border border-white/10 bg-white/5 p-6
+                          hover:shadow-xl hover:shadow-yellow-400/10 transition">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-xs px-2 py-0.5 rounded bg-yellow-400/15 border border-yellow-400/20 text-yellow-200">04</span>
+              <h3 class="font-semibold">Get matched surveys & ads</h3>
+            </div>
+            <p class="text-white/70 text-sm">
+              Campaigns target your anonymous persona only. You prove eligibility (e.g., 18+, country, device)
+              via ZK. Higher relevance → better experience for you and better data for brands.
+            </p>
+          </article>
+
+          <!-- 06 -->
+          <article class="group rounded-2xl border border-white/10 bg-white/5 p-6
+                          hover:shadow-xl hover:shadow-indigo-400/10 transition">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-xs px-2 py-0.5 rounded bg-indigo-400/15 border border-indigo-400/20 text-indigo-200">06</span>
+              <h3 class="font-semibold">Redeem OPI: USDC or vouchers</h3>
+            </div>
+            <p class="text-white/70 text-sm">
+              Convert OPI to USDC via the internal pool or redeem brand vouchers in the marketplace — all inside
+              the closed OPI economy, no external exchanges required.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right visual (How it works image only, pushed down) -->
+    <aside class="lg:block lg:mt-40">
+      <div class="overflow-hidden rounded-3xl max-w-md ml-auto">
+        <img
+          src="/assets/how_it_work_.png"
+          alt="How it works — visual"
+          class="w-full h-auto object-cover"
+          loading="lazy"
+          decoding="async"
+          onerror="this.style.display=;this.onerror=null;this.src='https://numerous-rondeletia-ddd.notion.site/image/attachment%3A4b0f5f3f-3346-486b-859f-b9463502d1d5%3AHow_it_work_.png?table=block&id=251c8817-f603-80c6-8372-ffb2f935f4ab&spaceId=a067a54c-1aa7-46b8-8ef8-6f8c9751f2e0&width=1420&userId=&cache=v2';"none'"
+        />
+      </div>
+    </aside>
+  </div>
+</section>
+
+
+    <!-- MARKETPLACE ----------------------------------------------------------------------------------------------------------->
+    <section id="marketplace" class="max-w-7xl mx-auto px-6 py-20">
+  <div class="grid lg:grid-cols-2 gap-10 items-center">
+    
+    <!-- Image (smaller, no card) -->
+    <div class="overflow-hidden rounded-3xl max-w-md mx-auto">
+      <img
+        src="/assets/market_place.png"
+        alt="OPI Marketplace preview"
+        class="w-full h-auto object-cover rounded-2xl"
+        loading="lazy"
+        decoding="async"
+      / onerror="this.onerror=null;this.src='https://numerous-rondeletia-ddd.notion.site/image/attachment%3Af2065ea5-98fc-4066-ae7c-cbbd1a237431%3AMarket_place.png?table=block&id=251c8817-f603-8007-a3af-df2b99681e3e&spaceId=a067a54c-1aa7-46b8-8ef8-6f8c9751f2e0&width=660&userId=&cache=v2';">
+    </div>
+
+    <!-- Copy inside a card (subtle hover style) -->
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Marketplace</h2>
+      <div class="group rounded-3xl border border-white/10 bg-white/5 p-8 
+                  transition shadow-sm hover:shadow-xl hover:shadow-[#7C3AED]/10 
+                  motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]">
+        
+        <p class="text-white/70 max-w-xl mb-6">
+          The OPI marketplace connects users with partner brands.  
+          Redeem your OPI tokens for <span class="text-white">vouchers, discounts or exclusive offers</span> — 
+          all inside the closed OPI economy, without external exchanges.
+        </p>
+
+        <ul class="grid gap-3 text-white/80">
+          <li class="flex items-start gap-3">
+            <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 mt-2"></span>
+            Users spend OPI on vouchers and partner offers.
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="inline-block w-2 h-2 rounded-full bg-violet-400 mt-2"></span>
+            Brands receive OPI, fueling new surveys and ads.
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="inline-block w-2 h-2 rounded-full bg-indigo-400 mt-2"></span>
+            A closed loop where value circulates back to the ecosystem.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+ 
+    
+    <!-- TOKENOMICS ----------------------------------------------------------------------------------------------------------------->
+<section id="tokenomics" class="max-w-7xl mx-auto px-6 pb-24">
+  <h2 class="text-2xl md:text-3xl font-bold">Tokenomics</h2>
+  <p class="mt-2 text-white/70 max-w-3xl">
+    A useful, stable, speculation-free token circulating only inside OPI’s closed economy.
+  </p>
+
+
+    <!-- Key points (lift + glow on hover) -->
+<div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+  <!-- 1 -->
+  <article class="group rounded-2xl border border-white/10 bg-white/5 p-5 transition
+                  shadow-sm hover:shadow-xl hover:shadow-white/10
+                  motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]">
+    <div class="h-9 w-9 rounded-md bg-white/10 grid place-items-center mb-3 transition group-hover:scale-110">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white/80" viewBox="0 0 24 24" fill="currentColor"><path d="M8 2h8v3h3v8h3v3h-3v6h-3v-6H8v6H5v-6H2v-3h3V5h3V2Zm8 3H8v11h8V5Z"/></svg>
+    </div>
+    <h3 class="font-semibold">Internal utility only</h3>
+    <p class="mt-1 text-white/70 text-sm">Not listed on DEX/CEX. Used to create surveys, run ads and buy vouchers.</p>
+  </article>
+
+  <!-- 2 -->
+  <article class="group rounded-2xl border border-white/10 bg-white/5 p-5 transition
+                  shadow-sm hover:shadow-xl hover:shadow-emerald-400/10
+                  motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]">
+    <div class="h-9 w-9 rounded-md bg-emerald-400/15 grid place-items-center mb-3 transition group-hover:scale-110">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-emerald-300" viewBox="0 0 24 24" fill="currentColor"><path d="M7 7h10v4l5-5-5-5v4H4v6h3V7Zm10 10H7v-4l-5 5 5 5v-4h13v-6h-3v4Z"/></svg>
+    </div>
+    <h3 class="font-semibold">Internal OPI/USDC pool</h3>
+    <p class="mt-1 text-white/70 text-sm">Stable conversion inside OPI, without exposure to external markets.</p>
+  </article>
+
+  <!-- 3 -->
+  <article class="group rounded-2xl border border-white/10 bg-white/5 p-5 transition
+                  shadow-sm hover:shadow-xl hover:shadow-[#7C3AED]/10
+                  motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]">
+    <div class="h-9 w-9 rounded-md bg-[#7C3AED]/20 grid place-items-center mb-3 transition group-hover:scale-110">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#A78BFA]" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21V8l6 3V8l6 3V8l6 3v10H3Z"/></svg>
+    </div>
+    <h3 class="font-semibold">Controlled supply</h3>
+    <p class="mt-1 text-white/70 text-sm">OPI is minted only when purchased by companies/advertisers.</p>
+  </article>
+
+  <!-- 4 -->
+  <article class="group rounded-2xl border border-white/10 bg-white/5 p-5 transition
+                  shadow-sm hover:shadow-xl hover:shadow-[#7C3AED]/10
+                  motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]">
+    <div class="h-9 w-9 rounded-md bg-[#7C3AED]/20 grid place-items-center mb-3 transition group-hover:scale-110">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#C4B5FD]" viewBox="0 0 24 24" fill="currentColor"><path d="M7 7h10v3l4-4-4-4v3H6a6 6 0 0 0 0 12h4v-2H6a4 4 0 0 1 0-8Zm11 10H8v-3l-4 4 4 4v-3h9a6 6 0 0 0 0-12h-4v2h4a4 4 0 0 1 0 8Z"/></svg>
+    </div>
+    <h3 class="font-semibold">Closed circular economy</h3>
+    <p class="mt-1 text-white/70 text-sm">OPI spent by users flows back to B2B actors, reinforcing demand.</p>
+  </article>
+</div>
+    
+      
+    
+    <!-- Mini diagram (gradient card background + gradient strokes + hub glow) -->
+<div class="mt-10 max-w-4xl mx-auto rounded-3xl ring-1 ring-white/10 p-4
+            bg-gradient-to-b from-[#1E1B4B] to-[#0F172A]
+            shadow-lg shadow-white/5">
+
+  <div class="text-sm text-white/60 mb-3">Internal OPI/USDC pool — simplified</div>
+  <div class="grid place-items-center">
+    <svg class="w-full max-w-[640px]" viewBox="0 0 720 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Internal pool between Companies/Advertisers, Users and the OPI/USDC liquidity">
+      <defs>
+        <!-- Gradient for strokes -->
+        <linearGradient id="gStroke" x1="0" y1="0" x2="720" y2="0" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#7C3AED"/>
+          <stop offset="100%" stop-color="#34D399"/>
+        </linearGradient>
+
+        <!-- Gradient halo -->
+        <radialGradient id="gHalo" cx="50%" cy="40%" r="70%">
+          <stop offset="0%" stop-color="#7C3AED" stop-opacity=".25"/>
+          <stop offset="40%" stop-color="#7C3AED" stop-opacity=".15"/>
+          <stop offset="100%" stop-color="#34D399" stop-opacity="0"/>
+        </radialGradient>
+
+        <!-- Gradient arrow -->
+        <marker id="arrowGrad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="url(#gStroke)"/>
+        </marker>
+
+        <!-- Hub glow -->
+        <filter id="hubGlow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+
+        <style>
+          .cardRect { rx:14; fill:#0F172A; stroke:url(#gStroke); stroke-width:1.6; }
+          .title{ font:600 13px/1.2 Inter, ui-sans-serif; fill:#E5E7EB }
+          .sub  { font:500 12px/1.2 Inter, ui-sans-serif; fill:#A7B0C0 }
+          @media (prefers-reduced-motion: no-preference) {
+            .card:hover .cardRect {
+              filter: drop-shadow(0 6px 16px rgba(124,58,237,.18))
+                      drop-shadow(0 2px 8px rgba(52,211,153,.12));
+            }
+            @keyframes haloPulse { 0%,100%{opacity:.18;transform:scale(1)} 50%{opacity:.28;transform:scale(1.035)} }
+            .hubHalo { transform-origin:center }
+            .hub:hover .hubHalo { animation: haloPulse 2.6s ease-in-out infinite }
+          }
+        </style>
+      </defs>
+
+      <!-- Left: Companies / Advertisers -->
+      <g transform="translate(30,70)">
+        <rect class="cardRect" width="200" height="60"/>
+        <text class="title" x="12" y="24">Companies & Advertisers</text>
+        <text class="sub"   x="12" y="42">buy OPI (USDC → OPI)</text>
+      </g>
+
+      <!-- Center: Pool -->
+      <g class="hub" transform="translate(260,40)">
+        <rect x="-6" y="-6" width="212" height="132" rx="20" fill="url(#gStroke)" opacity=".15" filter="url(#hubGlow)"/>
+        <rect class="hubHalo" x="-8" y="-10" width="216" height="136" rx="22" fill="url(#gHalo)" opacity=".18"/>
+        <rect class="cardRect" width="200" height="120"/>
+        <text class="title" x="100" y="26" text-anchor="middle">Internal Pool</text>
+        <text class="sub"   x="100" y="46" text-anchor="middle">OPI / USDC</text>
+        <text class="sub"   x="100" y="66" text-anchor="middle">fixed, in-ecosystem</text>
+      </g>
+
+      <!-- Right: Users -->
+      <g transform="translate(490,70)">
+        <rect class="cardRect" width="200" height="60"/>
+        <text class="title" x="12" y="24">Users</text>
+        <text class="sub"   x="12" y="42">redeem (OPI → USDC)</text>
+      </g>
+
+      <!-- Arrows -->
+      <path d="M230 100 L 260 100" stroke="url(#gStroke)" stroke-width="2.2" marker-end="url(#arrowGrad)"/>
+      <path d="M460 100 L 490 100" stroke="url(#gStroke)" stroke-width="2.2" marker-end="url(#arrowGrad)"/>
+
+      <!-- Bottom note -->
+      <text class="sub" x="360" y="200" text-anchor="middle">All OPI circulates inside OPI only — no external exchanges.</text>
+    </svg>
+  </div>
+</div>
+
+</section>
+
+
+<!-- TECHNOLOGY & SECURITY ---------------------------------------------------------------------------------------------------------------------------------->
+<section id="tech" class="max-w-7xl mx-auto px-6 pb-24">
+  <h2 class="text-2xl md:text-3xl font-bold">Technology & Security</h2>
+  <p class="mt-2 text-white/70 max-w-3xl">
+    Verified identity, zero‑knowledge privacy, and full control over what you share.
+  </p>
+
+  <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+    <!-- 1) SwissBorg — Verified Onboarding (KYC) -->
+    <article
+      class="group rounded-2xl border border-white/10 bg-white/5 p-6 transition
+             shadow-sm hover:shadow-xl hover:shadow-emerald-400/10
+             motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]
+                 lg:translate-y-4"> <!-- décalage léger sur desktop -->
+      <div class="flex items-center gap-3 mb-4">
+        <div class="h-10 w-10 rounded-lg bg-emerald-400/15 grid place-items-center transition group-hover:scale-110">
+          <!-- id/check icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-300" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14H3V5Zm4 3h10v2H7V8Zm0 4h6v2H7v-2Zm11.293 5.293-1.586-1.586-1.414 1.414 3 3 4-4-1.414-1.414-2.586 2.586Z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold">Verified onboarding (KYC)</h3>
+      </div>
+
+      <!-- SwissBorg logo -->
+      <div class="rounded-xl bg-white/5 border border-white/10 p-4 mb-4">
+        <img
+          src="/assets/swisborg.jpg"
+          alt="SwissBorg logo" loading="lazy" decoding="async"
+          class="h-8 w-auto mx-auto object-contain rounded"
+        / onerror="this.onerror=null;this.src='https://numerous-rondeletia-ddd.notion.site/image/attachment%3A88e72586-9de2-4367-96e0-e86f22f9a3c6%3ASWISBORG.jpg?table=block&id=250c8817-f603-80ab-b56e-d7769cf8c5ba&spaceId=a067a54c-1aa7-46b8-8ef8-6f8c9751f2e0&width=220&userId=&cache=v2';">
+      </div>
+
+      <p class="text-white/70 text-sm">
+        One‑time KYC with SwissBorg ensures compliant and secure onboarding. Documents are verified and protected —
+        OPI never sees your original KYC data.
+      </p>
+
+      <div class="mt-4 flex flex-wrap gap-2">
+        <span class="text-xs px-2 py-1 rounded bg-white/10 border border-white/10">KYC</span>
+        <span class="text-xs px-2 py-1 rounded bg-white/10 border border-white/10">Compliance</span>
+        <span class="text-xs px-2 py-1 rounded bg-white/10 border border-white/10">Encryption</span>
+      </div>
+    </article>
+      
+          <!-- 2) Galactica — Anonymous Digital Identity (SBT + ZK) -->
+    <article
+      class="group rounded-2xl border border-white/10 bg-white/5 p-6 transition
+             shadow-sm hover:shadow-xl hover:shadow-[#7C3AED]/10
+             motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]">
+         
+      <div class="flex items-center gap-3 mb-4">
+        <div class="h-10 w-10 rounded-lg bg-[#7C3AED]/20 grid place-items-center transition group-hover:scale-110">
+          <!-- shield/zk icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#A78BFA]" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2 4 5v6c0 5.25 3.75 10 8 11 4.25-1 8-5.75 8-11V5l-8-3Zm-1 13.59L8.41 13 7 14.41l4 4 6-6L15.59 11 11 15.59Z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold">Anonymous digital identity (SBT + ZK)</h3>
+      </div>
+
+      <!-- Galactica logo -->
+      <div class="rounded-xl bg-white/5 border border-white/10 p-4 mb-4">
+        <img
+          src="/assets/galactica_.png"
+          alt="Galactica logo" loading="lazy" decoding="async"
+          class="h-8 w-auto mx-auto object-contain"
+        / onerror="this.onerror=null;this.src='https://numerous-rondeletia-ddd.notion.site/image/attachment%3Afef0f0e2-10b4-4b2e-a1ac-28b226b4efe4%3Agalactica_.png?table=block&id=250c8817-f603-80d6-b2c7-ec46768d5782&spaceId=a067a54c-1aa7-46b8-8ef8-6f8c9751f2e0&width=290&userId=&cache=v2';">
+      </div>
+
+      <p class="text-white/70 text-sm">
+        Unique, non‑transferable SoulBound Token (SBT) verifies you’re real while keeping your identity private.
+        Zero‑Knowledge proofs let you prove attributes without revealing personal data.
+      </p>
+
+      <div class="mt-4 flex flex-wrap gap-2">
+        <span class="text-xs px-2 py-1 rounded bg-white/10 border border-white/10">SBT</span>
+        <span class="text-xs px-2 py-1 rounded bg-white/10 border border-white/10">Zero‑Knowledge</span>
+        <span class="text-xs px-2 py-1 rounded bg-white/10 border border-white/10">Privacy‑by‑design</span>
+      </div>
+    </article>
+
+    <!-- 3) Selective Data Sharing -->
+    <article
+      class="group rounded-2xl border border-white/10 bg-white/5 p-6 transition
+             shadow-sm hover:shadow-xl hover:shadow-white/10
+             motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]
+                 lg:translate-y-4"> <!-- décalage léger sur desktop -->
+      <div class="flex items-center gap-3 mb-4">
+        <div class="h-10 w-10 rounded-lg bg-white/10 grid place-items-center transition group-hover:scale-110">
+          <!-- sliders icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white/80" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4 7h7V5H4v2Zm9 12h7v-2h-7v2ZM4 13h16v-2H4v2Zm12-8v6h2V5h-2ZM6 19v-6H4v6h2Z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold">Selective data sharing</h3>
+      </div>
+
+      <p class="text-white/70 text-sm">
+        Share only what’s required to qualify for a survey — nothing else. Prove attributes via ZK and keep your
+        personal details private at all times.
+      </p>
+
+      <ul class="mt-4 text-white/70 text-sm space-y-1">
+        <li>• Residency (e.g., <em>country</em>)</li>
+        <li>• Age eligibility (e.g., <em>18+</em>)</li>
+        <li>• Device type (e.g., <em>Android / iOS</em>)</li>
+        <li>• Verified ownership via <em>NFT/POAP</em> (e.g., a specific product/event)</li>
+      </ul>
+
+      <div class="mt-4 flex flex-wrap gap-2">
+        <span class="text-xs px-2 py-1 rounded bg-white/10 border border-white/10">Attribute proofs</span>
+        <span class="text-xs px-2 py-1 rounded bg-white/10 border border-white/10">Consent‑based</span>
+      </div>
+    </article>
+  </div>
+</section>
+    
+    
+    
+      <!-- TEST ----------------------------------------------------------------------------------->
+    <!-- IMAGE SEPARATOR -->
+<section class="max-w-sm mx-auto px-6 py-12 flex justify-center">
+  <img
+    src="/assets/logo_opi_3d.png"
+    alt="Illustration"
+    class="w-full max-w-3xl h-auto object-contain"
+    loading="lazy"
+    decoding="async"
+  / onerror="this.onerror=null;this.src='https://numerous-rondeletia-ddd.notion.site/image/attachment%3A0b48acef-beb0-45fa-989e-1baadc88169d%3Alogo_OPI_3D.png?table=block&id=252c8817-f603-80cc-aa6a-fa963b5740bc&spaceId=a067a54c-1aa7-46b8-8ef8-6f8c9751f2e0&width=660&userId=&cache=v2';">
+</section>
+
+      
+
+
+    <!-- INCENTIVES ----------------------------------------------------------------------------------->
+<section id="incentives" class="max-w-7xl mx-auto px-6 pb-24">
+  <h2 class="text-2xl md:text-3xl font-bold">Incentives</h2>
+  <p class="mt-2 text-white/70 max-w-3xl">
+    The more you participate, the more you earn — fairly and transparently.
+  </p>
+
+  <!-- 3 incentive pillars -->
+  <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- 1) Surveys -->
+    <article
+      class="group rounded-2xl border border-white/10 bg-white/5 p-6 transition
+             shadow-sm hover:shadow-xl hover:shadow-[#7C3AED]/10
+             motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="h-10 w-10 rounded-lg bg-[#7C3AED]/20 grid place-items-center transition group-hover:scale-110">
+          <!-- clipboard icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#A78BFA]" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M9 2h6l1 2h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2l1-2Zm0 6h6v2H9V8Zm0 4h6v2H9v-2Z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold">Survey rewards</h3>
+      </div>
+      <p class="text-white/70 text-sm">
+        Earn OPI for each validated answer. Bonuses for completion streaks and high‑quality responses.
+      </p>
+      <ul class="mt-4 text-white/70 text-sm space-y-1">
+        <li>• Fixed reward per survey</li>
+        <li>• Quality bonus (anti‑spam checks)</li>
+        <li>• Streak multiplier (e.g., 7‑day streak)</li>
+      </ul>
+    </article>
+
+    <!-- 2) Ads -->
+    <article
+      class="group rounded-2xl border border-white/10 bg-white/5 p-6 transition
+             shadow-sm hover:shadow-xl hover:shadow-emerald-400/10
+             motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]
+                 lg:translate-y-4"> <!-- décalage léger sur desktop -->
+      <div class="flex items-center gap-3 mb-4">
+        <div class="h-10 w-10 rounded-lg bg-emerald-400/15 grid place-items-center transition group-hover:scale-110">
+          <!-- play/ad icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-300" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3h2a2 2 0 0 1 2 2v9H3V5Zm7 2 6 4-6 4V7Z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold">Ad view rewards</h3>
+      </div>
+      <p class="text-white/70 text-sm">
+        Get paid in OPI for attention — with viewability and completion checks to ensure fairness.
+      </p>
+      <ul class="mt-4 text-white/70 text-sm space-y-1">
+        <li>• Reward per completed view</li>
+        <li>• Bonus for interactive ads</li>
+        <li>• Frequency caps (no farming)</li>
+      </ul>
+    </article>
+
+    <!-- 3) NFTs / POAP -->
+    <article
+      class="group rounded-2xl border border-white/10 bg-white/5 p-6 transition
+             shadow-sm hover:shadow-xl hover:shadow-white/10
+             motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="h-10 w-10 rounded-lg bg-white/10 grid place-items-center transition group-hover:scale-110">
+          <!-- badge/trophy -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white/80" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6 2h12v3h2v3a5 5 0 0 1-5 5h-1v3h3v2H7v-2h3v-3H9a5 5 0 0 1-5-5V5h2V2Zm12 5V5h-1V4H7v1H6v2a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3Z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold">NFTs & POAPs</h3>
+      </div>
+      <p class="text-white/70 text-sm">
+        Earn collectible badges for campaigns, events, or verified ownership. Brands can target holders as certified customers.
+      </p>
+      <ul class="mt-4 text-white/70 text-sm space-y-1">
+        <li>• Participation badges (campaign/event)</li>
+        <li>• Product ownership proof</li>
+        <li>• Achievement tiers & exclusive perks</li>
+      </ul>
+    </article>
+  </div>
+
+  <!-- Helper note -->
+  <p class="mt-6 text-xs text-white/60">
+    Rewards are automated by smart contracts; all distributions are traceable on‑chain.
+  </p>
+</section>
+
+    <!-- COMPETITIVE ADVANTAGES --------------------------------------------------------------------------------------------->
+<section id="advantages" class="max-w-7xl mx-auto px-6 pb-24">
+  <h2 class="text-2xl md:text-3xl font-bold">Competitive Advantages</h2>
+  <p class="mt-2 text-white/70 max-w-2xl">Why OPI stands out in the Web3 landscape.</p>
+
+  <div class="mt-8 grid md:grid-cols-2 gap-6">
+    <!-- 1) Closed economy stability -->
+    <article
+      class="group rounded-2xl border border-white/10 
+             bg-gradient-to-b from-[#7C3AED]/15 via-white/5 to-white/5 
+             p-6 transition shadow-sm hover:shadow-xl hover:shadow-[#7C3AED]/10
+             motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]">
+      <div class="h-10 w-10 rounded-lg bg-[#7C3AED]/20 grid place-items-center mb-4 transition group-hover:scale-110">
+        <!-- shield icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#A78BFA]" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2 3 5v6c0 5.25 3.66 10.74 9 12 5.34-1.26 9-6.75 9-12V5l-9-3Z"/>
+        </svg>
+      </div>
+      <h3 class="text-lg font-semibold">Closed economy stability</h3>
+      <p class="mt-2 text-white/70">Internal-only token circulation shields OPI from market speculation.</p>
+    </article>
+
+    <!-- 2) Anonymity by Galactica -->
+    <article
+      class="group rounded-2xl border border-white/10 
+             bg-gradient-to-b from-emerald-400/15 via-white/5 to-white/5 
+             p-6 transition shadow-sm hover:shadow-xl hover:shadow-emerald-400/10
+             motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]">
+      <div class="h-10 w-10 rounded-lg bg-emerald-400/15 grid place-items-center mb-4 transition group-hover:scale-110">
+        <!-- user check -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-300" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2a5 5 0 0 0-5 5v2H6a4 4 0 0 0-4 4v4h2v-4a2 2 0 0 1 2-2h1v2h2V9a3 3 0 0 1 6 0v4h2V9a5 5 0 0 0-5-5Zm1 13a5 5 0 0 0-5 5h2a3 3 0 0 1 6 0h2a5 5 0 0 0-5-5Z"/>
+        </svg>
+      </div>
+      <h3 class="text-lg font-semibold">Anonymity by Galactica</h3>
+      <p class="mt-2 text-white/70">KYC + Zero-Knowledge Proofs ensure verified identity with full privacy.</p>
+    </article>
+
+    <!-- 3) Transparent & instant rewards -->
+    <article
+      class="group rounded-2xl border border-white/10 
+             bg-gradient-to-b from-[#6366F1]/15 via-white/5 to-white/5 
+             p-6 transition shadow-sm hover:shadow-xl hover:shadow-[#6366F1]/10
+             motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]">
+      <div class="h-10 w-10 rounded-lg bg-[#6366F1]/20 grid place-items-center mb-4 transition group-hover:scale-110">
+        <!-- lightning -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#C7D2FE]" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M13 2 3 14h7v8l10-12h-7l.4-8Z"/>
+        </svg>
+      </div>
+      <h3 class="text-lg font-semibold">Transparent & instant rewards</h3>
+      <p class="mt-2 text-white/70">Immediate OPI payouts for every survey or ad interaction.</p>
+    </article>
+
+    <!-- 4) Aligned incentives -->
+    <article
+      class="group rounded-2xl border border-white/10 
+             bg-gradient-to-b from-white/10 via-white/5 to-white/5 
+             p-6 transition shadow-sm hover:shadow-xl hover:shadow-white/10
+             motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]">
+      <div class="h-10 w-10 rounded-lg bg-white/10 grid place-items-center mb-4 transition group-hover:scale-110">
+        <!-- sync -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white/80" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M4 4v6h6V8H7.82C8.74 6.19 10.74 5 13 5a5 5 0 0 1 0 10h-1v2h1a7 7 0 0 0 0-14c-2.61 0-4.83 1.5-5.91 3.68L4 4Zm16 16v-6h-6v2h2.18C15.26 17.81 13.26 19 11 19a5 5 0 0 1 0-10h1V7h-1a7 7 0 0 0 0 14c2.61 0 4.83-1.5 5.91-3.68L20 20Z"/>
+        </svg>
+      </div>
+      <h3 class="text-lg font-semibold">Aligned incentives</h3>
+      <p class="mt-2 text-white/70">Survey creators, advertisers, and users all benefit from the same value loop.</p>
+    </article>
+  </div>
+</section>
+
+
+ 
+    
+    
+    <!-- ROADMAP (1 row, staggered) --------------------------------------------------------------------------------------------->
+<section id="roadmap" class="max-w-7xl mx-auto px-6 pb-24">
+  <h2 class="text-2xl md:text-3xl font-bold">Roadmap</h2>
+  <p class="mt-2 text-white/70 max-w-3xl">From MVP to DAO governance.</p>
+
+  <div class="relative mt-10">
+ 
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Q1 (higher) -->
+      <article
+        class="lg:-translate-y-3 group rounded-2xl border border-white/10 p-6
+               bg-gradient-to-b from-[#1E1B4B]/60 to-white/5
+               shadow-sm transition hover:shadow-xl hover:shadow-[#7C3AED]/10
+               motion-safe:hover:-translate-y-4 motion-safe:hover:scale-[1.01]">
+        <div class="text-xs font-semibold text-white/70">Q1</div>
+        <h3 class="mt-1 text-lg font-semibold">MVP</h3>
+        <ul class="mt-2 text-white/70 text-sm space-y-1">
+          <li>• Core surveys (create, distribute, reward)</li>
+          <li>• Internal OPI/USDC pool</li>
+          <li>• Marketplace (vouchers)</li>
+        </ul>
+      </article>
+
+      <!-- Q2 (lower) -->
+      <article
+        class="lg:translate-y-3 group rounded-2xl border border-white/10 p-6
+               bg-gradient-to-b from-emerald-900/30 to-white/5
+               shadow-sm transition hover:shadow-xl hover:shadow-emerald-400/10
+               motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]">
+        <div class="text-xs font-semibold text-white/70">Q2</div>
+        <h3 class="mt-1 text-lg font-semibold">Identity & Privacy</h3>
+        <ul class="mt-2 text-white/70 text-sm space-y-1">
+          <li>• Galactica SBT + ZK proofs</li>
+          <li>• SwissBorg KYC onboarding</li>
+          <li>• Selective attribute sharing</li>
+        </ul>
+      </article>
+
+      <!-- Q3 (higher) -->
+      <article
+        class="lg:-translate-y-3 group rounded-2xl border border-white/10 p-6
+               bg-gradient-to-b from-[#4338CA]/40 to-white/5
+               shadow-sm transition hover:shadow-xl hover:shadow-[#6366F1]/10
+               motion-safe:hover:-translate-y-4 motion-safe:hover:scale-[1.01]">
+        <div class="text-xs font-semibold text-white/70">Q3</div>
+        <h3 class="mt-1 text-lg font-semibold">Growth & Partnerships</h3>
+        <ul class="mt-2 text-white/70 text-sm space-y-1">
+          <li>• Brand & research partners</li>
+          <li>• Advanced advertiser targeting</li>
+          <li>• NFTs/POAP campaigns</li>
+        </ul>
+      </article>
+
+      <!-- Q4 (lower) -->
+      <article
+        class="lg:translate-y-3 group rounded-2xl border border-white/10 p-6
+               bg-gradient-to-b from-white/10 to-white/5
+               shadow-sm transition hover:shadow-xl hover:shadow-white/10
+               motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.01]">
+        <div class="text-xs font-semibold text-white/70">Q4</div>
+        <h3 class="mt-1 text-lg font-semibold">DAO & Staking </h3>
+        <ul class="mt-2 text-white/70 text-sm space-y-1">
+          <li>• OPI staking for governance</li>
+          <li>• Votes on features, partners, rewards</li>
+          <li>• Community treasury</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+ <!-- FAQ -->
+<section id="faq" class="max-w-7xl mx-auto px-6 pb-24">
+  <h2 class="text-2xl md:text-3xl font-bold">FAQ</h2>
+  <p class="mt-2 text-white/70 max-w-3xl">Short answers to the most common questions.</p>
+
+  <div class="mt-8 divide-y divide-white/10 rounded-2xl border border-white/10 bg-white/5">
+    <!-- Item -->
+    <details class="group p-5 open:bg-white/5">
+      <summary class="flex cursor-pointer items-center justify-between">
+        <span class="font-semibold">Is my identity public on OPI?</span>
+        <svg class="h-5 w-5 transition group-open:rotate-90" viewBox="0 0 24 24" fill="currentColor"><path d="M13.172 12 9.1 7.929l1.414-1.415L16 12l-5.485 5.485L9.1 16.07 13.172 12Z"/></svg>
+      </summary>
+      <p class="mt-2 text-white/70 text-sm">
+        No. You verify once (SwissBorg) and get an anonymous Galactica SBT. You only share the attributes needed for each survey (e.g., country, 18+, device).
+      </p>
+    </details>
+
+    <details class="group p-5">
+      <summary class="flex cursor-pointer items-center justify-between">
+        <span class="font-semibold">Can I trade OPI on external exchanges?</span>
+        <svg class="h-5 w-5 transition group-open:rotate-90" viewBox="0 0 24 24" fill="currentColor"><path d="M13.172 12 9.1 7.929l1.414-1.415L16 12l-5.485 5.485L9.1 16.07 13.172 12Z"/></svg>
+      </summary>
+      <p class="mt-2 text-white/70 text-sm">
+        No. OPI is an internal utility token. Conversion happens only via the internal OPI/USDC pool or vouchers on the marketplace.
+      </p>
+    </details>
+
+    <details class="group p-5">
+      <summary class="flex cursor-pointer items-center justify-between">
+        <span class="font-semibold">How do users earn?</span>
+        <svg class="h-5 w-5 transition group-open:rotate-90" viewBox="0 0 24 24" fill="currentColor"><path d="M13.172 12 9.1 7.929l1.414-1.415L16 12l-5.485 5.485L9.1 16.07 13.172 12Z"/></svg>
+      </summary>
+      <p class="mt-2 text-white/70 text-sm">
+        By completing surveys and watching targeted ads. Rewards are instant and transparent on‑chain.
+      </p>
+    </details>
+
+    <details class="group p-5">
+      <summary class="flex cursor-pointer items-center justify-between">
+        <span class="font-semibold">What do brands get out of OPI?</span>
+        <svg class="h-5 w-5 transition group-open:rotate-90" viewBox="0 0 24 24" fill="currentColor"><path d="M13.172 12 9.1 7.929l1.414-1.415L16 12l-5.485 5.485L9.1 16.07 13.172 12Z"/></svg>
+      </summary>
+      <p class="mt-2 text-white/70 text-sm">
+        Certified audiences with verified attributes (via SBT/ZK), higher data quality, and better ad performance. 
+      </p>
+    </details>
+
+    <details class="group p-5">
+      <summary class="flex cursor-pointer items-center justify-between">
+        <span class="font-semibold">Do I keep control of my data?</span>
+        <svg class="h-5 w-5 transition group-open:rotate-90" viewBox="0 0 24 24" fill="currentColor"><path d="M13.172 12 9.1 7.929l1.414-1.415L16 12l-5.485 5.485L9.1 16.07 13.172 12Z"/></svg>
+      </summary>
+      <p class="mt-2 text-white/70 text-sm">
+        Yes. You decide what to share for each survey. Zero‑Knowledge lets you prove facts without revealing personal information.
+      </p>
+    </details>
+  </div>
+</section>
+
+    
+    
+
+    
+    <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    
+    
+    <!-- CTA Banner Final -------------------------------------------------------------------------------------------------------------------------->
+<section class="max-w-7xl mx-auto px-6 pb-20">
+  <div class="rounded-3xl p-8 text-center bg-gradient-to-r from-[#7C3AED]/15 via-[#7C3AED]/10 to-transparent border border-[#7C3AED]/30">
+    <h2 class="text-2xl md:text-3xl font-bold mb-3">Be part of the OPI journey</h2>
+    <p class="text-white/70 max-w-2xl mx-auto mb-6">
+      Secure your spot, get early updates, and be ready to monetize your opinion.
+    </p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      
+      <!-- Join the Waitlist CTA -->
+      <a href="#waitlist" 
+         class="px-6 py-3 rounded-xl font-semibold text-white 
+                bg-gradient-to-r from-[#7C3AED] to-[#6D28D9] 
+                hover:from-[#8B5CF6] hover:to-[#7C3AED]
+                transition-transform transform hover:-translate-y-0.5 hover:scale-105
+                shadow-lg shadow-[#7C3AED]/20 flex items-center gap-2">
+        <!-- Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+        </svg>
+        Join the Waitlist
+      </a>
+      
+      <!-- Read Litepaper -->
+      <a href="https://numerous-rondeletia-ddd.notion.site/LITE-PAPER-OPI-24fc8817f603804ab6a5db9a6eb692a6" target="_blank"
+         class="px-6 py-3 rounded-xl font-semibold text-white border border-white/20 
+                hover:bg-white/10 transition-transform transform hover:-translate-y-0.5 hover:scale-105 flex items-center gap-2">
+        <!-- Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+        Read litepaper
+      </a>
+    </div>
+  </div>
+</section>
+
+    <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ <!-- FINAL CTA (soft) -->
+<section id="cta" class="max-w-7xl mx-auto px-6 pb-24">
+  
+
+        <!-- tiny trust row -->
+        <div class="mt-6 flex flex-wrap items-center gap-4 text-xs text-white/70">
+          <span class="inline-flex items-center gap-2">
+            <span class="h-2 w-2 rounded-full bg-emerald-300"></span> Privacy by design (ZK/SBT)
+          </span>
+          <span class="hidden sm:inline h-4 w-px bg-white/15"></span>
+          <span class="hidden sm:inline">Instant, transparent rewards on‑chain</span>
+        </div>
+</section>
+ 
+
+        
+    <!-- ENRICHED FOOTER ----------------------------------------------------------------------------------------->
+<footer class="border-t border-white/10 bg-[#0B1224]">
+  <div class="max-w-7xl mx-auto px-6 py-14 grid gap-10 md:grid-cols-4">
+    <!-- Brand -->
+    <div>
+      <a href="/" class="flex items-center gap-3">
+        <img
+          src="/assets/opi_logo_simple.png"
+          alt="OPI logo" loading="lazy" decoding="async" class="h-14 w-auto" onerror="this.onerror=null;this.src='https://numerous-rondeletia-ddd.notion.site/image/attachment%3Abf4b3f69-1902-46f6-9d7f-53f21632f5ba%3AOPI_LOGO_SIMPLE.png?table=block&id=250c8817-f603-809e-94fb-f38f264c7a3c&spaceId=a067a54c-1aa7-46b8-8ef8-6f8c9751f2e0&width=660&userId=&cache=v2';">
+      </a>
+      <p class="mt-3 text-sm text-white/70 max-w-xs">
+        OPI is a Web3 platform for verifiable surveys and fair ad rewards — with anonymous identity and selective data sharing.
+      </p>
+
+      <!-- Socials -->
+      <div class="mt-4 flex items-center gap-3">
+        <a href="#" aria-label="Twitter/X" class="p-2 rounded-lg bg-white/5 hover:bg-white/10">
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M18.244 2H21l-6.52 7.455L22.5 22h-6.9l-4.51-5.83L5.8 22H3l7.02-8.03L1.5 2h6.9l4.17 5.39L18.244 2Zm-2.414 18h2.285L8.255 4H5.97l9.86 16Z"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn" class="p-2 rounded-lg bg-white/5 hover:bg-white/10">
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.1c.7-1.3 2.4-2.7 4.9-2.7 5.2 0 6.2 3.4 6.2 7.8V24h-5V16.4c0-1.8 0-4.1-2.5-4.1s-2.9 2-2.9 4v7.7h-5V8z"/></svg>
+        </a>
+        <a href="#" aria-label="Discord" class="p-2 rounded-lg bg-white/5 hover:bg-white/10">
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M19.54 5.54A16.9 16.9 0 0 0 15 4l-.25.5a15.9 15.9 0 0 1 3.7 1.3c-3.45-1.6-6.45-1.6-9.9 0A15.9 15.9 0 0 1 12.3 4L12 3.96a16.9 16.9 0 0 0-4.54 1.58A18 18 0 0 0 3 18.26 16.4 16.4 0 0 0 7.5 20l.6-.84a10.9 10.9 0 0 1-1.9-.96l.38-.26c.37.18.74.35 1.12.5a14.2 14.2 0 0 0 7.1 0c.38-.15.75-.32 1.12-.5l.38.26c-.62.37-1.26.7-1.91.96l.62.84A16.4 16.4 0 0 0 21 18.26a18 18 0 0 0-1.46-12.72ZM8.75 15.5c-.77 0-1.4-.74-1.4-1.65 0-.91.62-1.65 1.4-1.65.77 0 1.4.74 1.4 1.65 0 .91-.62 1.65-1.4 1.65Zm6.5 0c-.77 0-1.4-.74-1.4-1.65 0-.91.62-1.65 1.4-1.65.77 0 1.4.74 1.4 1.65 0 .91-.62 1.65-1.4 1.65Z"/></svg>
+        </a>
+        <a href="#" aria-label="GitHub" class="p-2 rounded-lg bg-white/5 hover:bg-white/10">
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.49v-1.7c-2.78.61-3.37-1.17-3.37-1.17a2.65 2.65 0 0 0-1.11-1.47c-.91-.62.07-.61.07-.61a2.1 2.1 0 0 1 1.53 1.03 2.13 2.13 0 0 0 2.91.83c.05-.51.28-.99.64-1.35-2.22-.25-4.56-1.11-4.56-4.95a3.88 3.88 0 0 1 1.03-2.69 3.6 3.6 0 0 1 .1-2.65s.84-.27 2.75 1.02a9.45 9.45 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.37.84.41 1.78.1 2.65.68.73 1.03 1.67 1.03 2.69 0 3.85-2.34 4.7-4.57 4.95.43.38.71.93.71 1.57v2.33c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Product -->
+    <div>
+      <h4 class="font-semibold">Product</h4>
+      <ul class="mt-3 space-y-2 text-sm text-white/70">
+        <li><a href="#how" class="hover:text-white">How it works</a></li>
+        <li><a href="#tokenomics" class="hover:text-white">Tokenomics</a></li>
+        <li><a href="#tech" class="hover:text-white">Technology</a></li>
+        <li><a href="#incentives" class="hover:text-white">Incentives</a></li>
+        <li><a href="#advantages" class="hover:text-white">Advantages</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div>
+      <h4 class="font-semibold">Resources</h4>
+      <ul class="mt-3 space-y-2 text-sm text-white/70">
+        <li><a href="https://numerous-rondeletia-ddd.notion.site/LITE-PAPER-OPI-24fc8817f603804ab6a5db9a6eb692a6" target="_blank" class="hover:text-white">Litepaper</a></li>
+        <li><a href="#" class="hover:text-white">Docs</a></li>
+        <li><a href="#" class="hover:text-white">Blog</a></li>
+        <li><a href="#" class="hover:text-white">Changelog</a></li>
+      </ul>
+    </div>
+
+    <!-- Legal -->
+    <div>
+      <h4 class="font-semibold">Legal</h4>
+      <ul class="mt-3 space-y-2 text-sm text-white/70">
+        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+        <li><a href="#" class="hover:text-white">Cookies</a></li>
+        <li><a href="#" class="hover:text-white">Compliance</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-6 text-sm text-white/60 flex flex-col md:flex-row items-center justify-between gap-4">
+      <span>© <span id="opi-year"></span> OPI — Verifiable Opinions Platform</span>
+      <span class="text-white/60">Made with privacy‑by‑design</span>
+    </div>
+  </div>
+
+  <!-- Current year -->
+  <script>
+    document.getElementById('opi-year').textContent = new Date().getFullYear();
+  </script>
+</footer>
+</body>
+</html>
